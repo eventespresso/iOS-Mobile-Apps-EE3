@@ -1,0 +1,22 @@
+# we are putting derived data to the root dir for easier navigation
+DerivedData
+
+build
+.DS_Store
+
+# it seems that excluding this directory should be enough
+# for xcode4-only projects... Maybe...
+xcuserdata
+
+# the way we did it before - xcode3. Not sure if there were the
+# xcuserdata directory before, maybe not.
+*~
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.xcworkspace

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Default Query Limits</string>
+			<key>FooterText</key>
+			<string>When making a request to one of the three endpoints (Attendees, Events, Registrations) we specify a limit, which is defined here.  This limit determines the maximum number of results returned.  Returning a smaller number will increase speed, but you may not see all the results you would like.</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Attendees</string>
+			<key>Key</key>
+			<string>attendeesQueryLimit</string>
+			<key>DefaultValue</key>
+			<integer>0</integer>
+			<key>Titles</key>
+			<array>
+				<string>Unlimited</string>
+				<string>50</string>
+				<string>100</string>
+				<string>200</string>
+				<string>500</string>
+				<string>750</string>
+				<string>1000</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<integer>0</integer>
+				<integer>50</integer>
+				<integer>100</integer>
+				<integer>200</integer>
+				<integer>500</integer>
+				<integer>750</integer>
+				<string>1000</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Events</string>
+			<key>Key</key>
+			<string>eventsQueryLimit</string>
+			<key>DefaultValue</key>
+			<integer>0</integer>
+			<key>Titles</key>
+			<array>
+				<string>Unlimited</string>
+				<string>50</string>
+				<string>100</string>
+				<string>200</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<integer>0</integer>
+				<integer>50</integer>
+				<integer>100</integer>
+				<integer>200</integer>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Registrations</string>
+			<key>Key</key>
+			<string>registrationsQueryLimit</string>
+			<key>DefaultValue</key>
+			<integer>0</integer>
+			<key>Titles</key>
+			<array>
+				<string>Unlimited</string>
+				<string>50</string>
+				<string>100</string>
+				<string>200</string>
+				<string>500</string>
+				<string>750</string>
+				<string>1000</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<integer>0</integer>
+				<integer>50</integer>
+				<integer>100</integer>
+				<integer>200</integer>
+				<integer>500</integer>
+				<integer>750</integer>
+				<integer>1000</integer>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Event Display Sorting</string>
+			<key>FooterText</key>
+			<string>Sorting options for the event display.  You can sort by date (ON) or by name (OFF).</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Sort Events by Date</string>
+			<key>Key</key>
+			<string>sortByDate</string>
+			<key>DefaultValue</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>JSON API Timeout</string>
+			<key>FooterText</key>
+			<string>Time to wait for server response before giving up.</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Timeout</string>
+			<key>Key</key>
+			<string>restAPIRequestTimeout</string>
+			<key>DefaultValue</key>
+			<integer>30</integer>
+			<key>Titles</key>
+			<array>
+				<string>15 Seconds</string>
+				<string>30 Seconds</string>
+				<string>1 Minute</string>
+				<string>2 Minutes</string>
+				<string>3 Minutes</string>
+				<string>5 Minutes</string>
+				<string>10 Minutes</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<integer>15</integer>
+				<integer>30</integer>
+				<integer>60</integer>
+				<integer>120</integer>
+				<integer>180</integer>
+				<integer>300</integer>
+				<integer>600</integer>
+			</array>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Root</string>
+</dict>
+</plist>

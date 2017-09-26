@@ -1,0 +1,20 @@
+//
+// Prefix header for all source files of the 'EventEspressoHD' target in the 'EventEspressoHD' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+    #import "MCLog.h"
+#endif
+
+#define EVENT_TABLE_IS_INDEXED \
+    ((NO == [NSUserDefaults standardUserDefaults].sortByDate) && \
+     ([NSUserDefaults standardUserDefaults].eventIndexListThreshold <= events.count))
